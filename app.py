@@ -5,7 +5,7 @@ import requests
 import platform
 
 # Fetch poster from TMDB
-def fetch_poster(movie_id):
+def fetch_poster(movie_id): 
     url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key=c4f96c6c39991eee118d7189d35d7e74&language=en-US"
     response = requests.get(url)
     if response.status_code != 200:
